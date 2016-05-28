@@ -2,7 +2,7 @@ var express = require('express'),
   app = express(),
   router = express.Router(),
   path = require('path'),
-  data = require('../model/user'),
+  user = require('../model/user'),
   jwt = require('jsonwebtoken');
 
 app.set('superSecret', 'abcdef');
@@ -16,7 +16,7 @@ router.post('/login', function (req, res) {
     },
     token;
 
-  data.select(obj, function (response, err) {
+  user.select(obj, function (response, err) {
     if (err) {
       res_obj.msg = 'something error occured';
       res.send(res_obj);
@@ -59,9 +59,9 @@ router.post('/fetch', function (req, res) {
         // if everything is good, save to request for use in other routes
         res_obj.success = true;
         userid = decoded.userid;
-        data.searchtodo(userid, function (response, error) {
+        user.searchtodo(userid, function (response, error) {
           if (!error) {
-            res_obj.data = response;
+            res_obj.user = response;
             res.send(res_obj);
           }
         });
