@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>TO-DO LIST  </title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css'>
+    <link rel='stylesheet' href='https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css'>
+    <link rel='stylesheet' type='text/css' href ='css/todo.css'>
+    <script src='https://code.jquery.com/jquery-1.10.2.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src='https://code.jquery.com/ui/1.11.4/jquery-ui.js'></script>
+    <script type='text/javascript' src='js/todo.js'></script>
+  </head>
+  <body>
+    <nav class='navbar navbar-default'>
+      <div  id ='heading' class='container-fluid'>
+        <div  class='navbar-header'>
+          <a class='navbar-brand' href='#'> <span class='navbar_lists'>TODO</span> </a>
+        </div>
+      </div>
+     </nav>
+
+    <div class='bs-example'>
+      <div class='panel-group' id='accordion'>
+        <div class='panel panel-default'>
+            <div class='panel-heading'>
+                <h4 class='panel-title'>
+                    <a data-toggle='collapse' data-parent='#accordion' href='#collapseOne'> 1.VERY FIRST JOB</a>
+                </h4>
+            </div>
+            <div id='collapseOne' class='panel-collapse collapse in'>
+                <div class='panel-body'>
+                    <p>HTML stands for HyperText Markup Language. HTML is the main markup language </p>
+                </div>
+            </div>
+        </div>
+        <div class='panel panel-default'>
+            <div class='panel-heading'>
+                <h4 class='panel-title'>
+                    <a data-toggle='collapse' data-parent='#accordion' href='#collapseTwo'>2. SECOND JOB</a>
+                </h4>
+            </div>
+            <div id='collapseTwo' class='panel-collapse collapse'>
+                <div class='panel-body'>
+                    <p>Bootstrap is a powerful front-end framework for faster and easier web development.  </p>
+                </div>
+            </div>
+        </div>
+        <div class='panel panel-default'>
+            <div class='panel-heading'>
+                <h4 class='panel-title'>
+                    <a data-toggle='collapse' data-parent='#accordion' href='#collapseThree'>3. LAST JOB</a>
+                </h4>
+            </div>
+            <div id='collapseThree' class='panel-collapse collapse'>
+                <div class='panel-body'>
+                    <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties </p>
+                </div>
+            </div>
+          </div>
+       </div>
+     </div>
+     <div class='body'></div>
+       <button id = 'search' type='button' class='btn btn-primary' >ADD</button>
+       <p id='date'>Date : <input type='text' id='datepicker'></p>
+   </body>
+</html>                                		                                		

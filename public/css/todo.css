@@ -1,0 +1,61 @@
+<style>
+  .panel-body{
+    color: rgba(0,128,0,1);
+   }
+
+  .panel-title{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgba(128,0,0,1); 
+   }
+ 
+   #h1{
+     font-family: serif;
+    margin: 0 625;
+    font-size: 50px;
+    font-weight: 400;
+    color: rgba(0,0,255,0.6);
+   }
+
+   #date{
+    position: absolute;
+    top: calc(40% - 200px);
+    right: calc(30% - 100px);
+    margin: 20px;
+    font-size: 16px;
+    font-weight: 400;
+   }
+    
+   #search {width: 125px;
+    height: 35px;
+    border: 1px solid #A56161;
+    cursor: pointer;
+    border-radius: 2px;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 450px;
+    margin-left: 425px;
+   }
+
+  .bs-example{
+    position: absolute;
+    top: calc(40% - 100px);
+    left: calc(20% - 0px);
+    height: 250px;
+    width: 500px;
+    padding: 0px;
+    z-index: 2;
+  }
+
+  #heading{
+    background-color: black;
+   }
+
+  .navbar_lists{
+    font-size: 150%;
+    font-family: serif;   
+   }
+
+</style>
